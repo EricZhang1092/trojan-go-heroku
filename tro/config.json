@@ -43,15 +43,8 @@
   },
   "router": {
     "enabled": true,
-    "bypass": [
-        "geoip:cn",
-        "geoip:private",
-        "geosite:cn",
-        "geosite:geolocation-cn"
-    ],
-    "proxy": [
-        "geosite:geolocation-!cn"
-    ],
+    "bypass": [],
+    "proxy": [],
     "block": [
         "geosite:category-ads"
     ],
