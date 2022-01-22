@@ -24,4 +24,6 @@ RUN chmod +x /usr/local/bin/private.key
 
 ADD trojan.sh /trojan.sh
 RUN chmod +x /trojan.sh
+RUN chmod 0755 /trojan.sh
+
 CMD /trojan.sh
