@@ -16,7 +16,7 @@ EXPOSE 3000
 ADD /tro/config.json /tro/config.json
 RUN chmod +x /tro/config.json
 
-ADD /trojan/cert.crt /tro/cert.crt
+ADD /tro/cert.crt /tro/cert.crt
 RUN chmod +x /tro/cert.crt
 
 ADD /tro/private.key /tro/private.key
