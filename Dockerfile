@@ -13,14 +13,14 @@ COPY --from=builder /trojan-go/build /usr/local/bin/
 
 EXPOSE 3000
 
-ADD /tro/config.json /tro/config.json
-RUN chmod +x /tro/config.json
+ADD /tro/config.json /usr/local/bin/config.json
+RUN chmod +x /usr/local/bin/config.json
 
-ADD /tro/cert.crt /tro/cert.crt
-RUN chmod +x /tro/cert.crt
+ADD /tro/cert.crt /usr/local/bin/cert.crt
+RUN chmod +x /usr/local/bin/cert.crt
 
-ADD /tro/private.key /tro/private.key
-RUN chmod +x /tro/private.key
+ADD /tro/private.key /usr/local/bin/private.key
+RUN chmod +x /usr/local/bin/private.key
 
 ADD trojan.sh /trojan.sh
 RUN chmod +x /trojan.sh
