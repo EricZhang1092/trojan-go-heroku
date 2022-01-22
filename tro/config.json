@@ -1,7 +1,7 @@
 {
   "run_type": "server",
   "local_addr": "0.0.0.0",
-  "local_port": "$LOCALPORT",
+  "local_port": "$PORT",
   "remote_addr": "mafiria.herokuapp.com",
   "remote_port": 80,
   "log_level": 1,
