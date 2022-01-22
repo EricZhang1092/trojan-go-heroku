@@ -2,9 +2,9 @@
   "run_type": "server",
   "local_addr": "0.0.0.0",
   "local_port": "$LOCALPORT",
-  "remote_addr": "127.0.0.1",
+  "remote_addr": "mafiria.herokuapp.com",
   "remote_port": 80,
-  "log_level": 2,
+  "log_level": 1,
   "log_file": "",
   "password": [
     "$PASSWORD"
@@ -27,9 +27,6 @@
     "session_ticket": true,
     "reuse_session": true,
     "plain_http_response": "",
-    "fallback_addr": "127.0.0.1",
-    "fallback_port": 19999,
-    "fingerprint": "firefox"
   },
   "tcp": {
     "no_delay": true,
@@ -70,21 +67,5 @@
     "option": "",
     "arg": [],
     "env": []
-  },
-  "forward_proxy": {
-    "enabled": false,
-    "proxy_addr": "",
-    "proxy_port": 0,
-    "username": "",
-    "password": ""
-  },
-  "mysql": {
-    "enabled": false,
-    "server_addr": "localhost",
-    "server_port": 3306,
-    "database": "",
-    "username": "",
-    "password": "",
-    "check_rate": 60
   }
 }
