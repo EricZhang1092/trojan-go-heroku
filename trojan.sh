@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # config trojan
+install -d /etc/trojan-go/
 cat << EOF > /etc/trojan-go/config.json
 {
     "run_type": "server",
