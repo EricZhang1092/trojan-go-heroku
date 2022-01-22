@@ -3,7 +3,7 @@
   "local_addr": "0.0.0.0",
   "local_port": 443,
   "remote_addr": "127.0.0.1",
-  "remote_port": 19999,
+  "remote_port": 80,
   "log_level": 1,
   "log_file": "",
   "password": [
@@ -42,10 +42,19 @@
     "idle_timeout": 60
   },
   "router": {
-    "enabled": false,
-    "bypass": [],
-    "proxy": [],
-    "block": [],
+    "enabled": true,
+    "bypass": [
+        "geoip:cn",
+        "geoip:private",
+        "geosite:cn",
+        "geosite:geolocation-cn"
+    ],
+    "proxy": [
+        "geosite:geolocation-!cn"
+    ],
+    "block": [
+        "geosite:category-ads"
+    ],
     "default_policy": "proxy",
     "domain_strategy": "as_is",
     "geoip": "$PROGRAM_DIR$/geoip.dat",
