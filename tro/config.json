@@ -25,8 +25,7 @@
       "http/1.1"
     ],
     "session_ticket": true,
-    "reuse_session": true,
-    "plain_http_response": "",
+    "reuse_session": true
   },
   "tcp": {
     "no_delay": true,
@@ -43,7 +42,7 @@
     "bypass": [],
     "proxy": [],
     "block": [
-        "geosite:category-ads"
+      "geosite:category-ads"
     ],
     "default_policy": "proxy",
     "domain_strategy": "as_is",
@@ -62,10 +61,6 @@
   },
   "transport_plugin": {
     "enabled": true,
-    "type": "plaintext",
-    "command": "",
-    "option": "",
-    "arg": [],
-    "env": []
+    "type": "plaintext"
   }
 }
